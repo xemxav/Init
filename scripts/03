@@ -1,0 +1,9 @@
+#!/bin/bash 
+
+if [ $# -eq 0 ]
+	then
+		read -p "what folder ?" folder
+		ls -Ft $folder | grep -v /
+else
+	ls -Ft $1 | grep -v /
+fi

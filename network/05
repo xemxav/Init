@@ -1,0 +1,2 @@
+dig + short slash16.org 
+nslookup ns-1236.awsdns-26.org | grep Address:  

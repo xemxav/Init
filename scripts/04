@@ -1,0 +1,13 @@
+#!/bin/bash 
+
+FILE_NAME="/etc/crontab"
+LAST_MODIF=$(date -r &{FILE_NAME} '+%d/%m/%Y %H:%M')
+MY_MODIF="13/02/2018 17:43"
+
+if [ "$LAST_MODIF" != "$MY_MODIF" ]
+	then
+		echo "crontab has been modified: | mail -u root
+fi 
+
+#crontab -e
+#0 0 * * * sh /root/init_scripts/04

@@ -1,0 +1,6 @@
+#!/bin/bash 
+
+apt -y update && apt -y full-upgrade
+
+#crontable -e
+#0 4 * * 1 sh root/init_scripts/02 >> /var/log/update_script.log
